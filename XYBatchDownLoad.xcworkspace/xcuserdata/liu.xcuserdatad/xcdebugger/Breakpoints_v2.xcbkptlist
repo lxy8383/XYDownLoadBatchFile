@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XYBatchDownLoad/XYDownLoadTool.m"
-            timestampString = "579283485.42243"
+            filePath = "XYBatchDownLoad/ViewController.m"
+            timestampString = "579521438.5599591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-downLoadURL:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "XYBatchDownLoad/XYDownLoadTool.m"
-            timestampString = "579283485.42327"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "-downLoadURL:"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "-cancelAction:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

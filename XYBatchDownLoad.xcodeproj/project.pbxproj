@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35C42620AE50C0028EE8F688 /* libPods-XYBatchDownLoad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A17BD0E2CB13ED9BE0A1B5 /* libPods-XYBatchDownLoad.a */; };
+		5A23A609228A65A800BB6525 /* DownLoadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A23A608228A65A800BB6525 /* DownLoadCell.m */; };
 		5A4A292D2286BA3200B38EFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A292C2286BA3200B38EFC /* AppDelegate.m */; };
 		5A4A29302286BA3200B38EFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A292F2286BA3200B38EFC /* ViewController.m */; };
 		5A4A29332286BA3200B38EFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4A29312286BA3200B38EFC /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		09A17BD0E2CB13ED9BE0A1B5 /* libPods-XYBatchDownLoad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XYBatchDownLoad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A23A607228A65A800BB6525 /* DownLoadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownLoadCell.h; sourceTree = "<group>"; };
+		5A23A608228A65A800BB6525 /* DownLoadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownLoadCell.m; sourceTree = "<group>"; };
 		5A4A29282286BA3200B38EFC /* XYBatchDownLoad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYBatchDownLoad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4A292B2286BA3200B38EFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A4A292C2286BA3200B38EFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				5A4A293A2286BA3600B38EFC /* main.m */,
 				5A4A295D2286BABA00B38EFC /* XYDownLoadTool.h */,
 				5A4A295E2286BABA00B38EFC /* XYDownLoadTool.m */,
+				5A23A607228A65A800BB6525 /* DownLoadCell.h */,
+				5A23A608228A65A800BB6525 /* DownLoadCell.m */,
 			);
 			path = XYBatchDownLoad;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 			files = (
 				5A4A29302286BA3200B38EFC /* ViewController.m in Sources */,
 				5A4A293B2286BA3600B38EFC /* main.m in Sources */,
+				5A23A609228A65A800BB6525 /* DownLoadCell.m in Sources */,
 				5A4A295F2286BABA00B38EFC /* XYDownLoadTool.m in Sources */,
 				5A4A292D2286BA3200B38EFC /* AppDelegate.m in Sources */,
 			);

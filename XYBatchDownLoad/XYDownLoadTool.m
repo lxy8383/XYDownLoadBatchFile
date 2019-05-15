@@ -36,6 +36,8 @@
 
 
 - (void)downLoadURL:(NSString *)urlStr
+   andProgressBlock:(void(^)(NSProgress *progress))progressBlock
+      andCompletion:(void(^)(bool success))completionBlock
 {
     AFURLSessionManager *manager = [[AFURLSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     //下载地址
@@ -47,12 +49,16 @@
     NSString *filePath = [path stringByAppendingPathComponent:@"downLoadVideo"];
     
     NSURLSessionDownloadTask *downTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
-        NSLog(@"progress %@ , " , downloadProgress);
+        if(progressBlock){
+            progressBlock(downloadProgress);
+        }
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
         // 设定下载路径
         return [NSURL fileURLWithPath:filePath];
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-        NSLog(@"error%@",error);
+        if(!error){
+            completionBlock(YES);
+        }
     }];
     
     [downTask resume];

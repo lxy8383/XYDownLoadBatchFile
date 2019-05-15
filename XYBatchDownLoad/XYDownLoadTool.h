@@ -14,7 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedInstance;
 
-- (void)downLoadURL:(NSString *)urlStr;
+- (void)downLoadURL:(NSString *)urlStr
+   andProgressBlock:(void(^)(NSProgress *progress))progressBlock
+      andCompletion:(void(^)(bool success))completionBlock;
 
 
 @end
