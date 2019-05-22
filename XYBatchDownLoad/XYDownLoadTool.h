@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
       andCompletion:(void(^)(bool success))completionBlock;
 
 
+
+- (void)requestWithUrl:(NSString *)urlStr andSuccessBlock:(void (^) (BOOL success))completionBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

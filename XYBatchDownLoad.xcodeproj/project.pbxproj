@@ -18,6 +18,9 @@
 		5A4A29452286BA3600B38EFC /* XYBatchDownLoadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A29442286BA3600B38EFC /* XYBatchDownLoadTests.m */; };
 		5A4A29502286BA3600B38EFC /* XYBatchDownLoadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A294F2286BA3600B38EFC /* XYBatchDownLoadUITests.m */; };
 		5A4A295F2286BABA00B38EFC /* XYDownLoadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A295E2286BABA00B38EFC /* XYDownLoadTool.m */; };
+		5A7E7ACE2295874300A61F2B /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7E7ACD2295874300A61F2B /* RootController.m */; };
+		5A7E7AD1229589C800A61F2B /* GCDGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7E7AD0229589C800A61F2B /* GCDGroupController.m */; };
+		5A7E7AD422958A2400A61F2B /* GCDSemaphoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7E7AD322958A2400A61F2B /* GCDSemaphoreController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		5A4A29512286BA3600B38EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A4A295D2286BABA00B38EFC /* XYDownLoadTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYDownLoadTool.h; sourceTree = "<group>"; };
 		5A4A295E2286BABA00B38EFC /* XYDownLoadTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYDownLoadTool.m; sourceTree = "<group>"; };
+		5A7E7ACC2295874300A61F2B /* RootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootController.h; sourceTree = "<group>"; };
+		5A7E7ACD2295874300A61F2B /* RootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootController.m; sourceTree = "<group>"; };
+		5A7E7ACF229589C800A61F2B /* GCDGroupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDGroupController.h; sourceTree = "<group>"; };
+		5A7E7AD0229589C800A61F2B /* GCDGroupController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDGroupController.m; sourceTree = "<group>"; };
+		5A7E7AD222958A2400A61F2B /* GCDSemaphoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDSemaphoreController.h; sourceTree = "<group>"; };
+		5A7E7AD322958A2400A61F2B /* GCDSemaphoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphoreController.m; sourceTree = "<group>"; };
 		D5B50765B9A6566106AEABA7 /* Pods-XYBatchDownLoad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYBatchDownLoad.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYBatchDownLoad/Pods-XYBatchDownLoad.release.xcconfig"; sourceTree = "<group>"; };
 		F7073ECE525BEF382685E3EB /* Pods-XYBatchDownLoad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYBatchDownLoad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYBatchDownLoad/Pods-XYBatchDownLoad.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +123,8 @@
 		5A4A292A2286BA3200B38EFC /* XYBatchDownLoad */ = {
 			isa = PBXGroup;
 			children = (
+				5A7E7ACC2295874300A61F2B /* RootController.h */,
+				5A7E7ACD2295874300A61F2B /* RootController.m */,
 				5A4A292B2286BA3200B38EFC /* AppDelegate.h */,
 				5A4A292C2286BA3200B38EFC /* AppDelegate.m */,
 				5A4A292E2286BA3200B38EFC /* ViewController.h */,
@@ -127,6 +138,10 @@
 				5A4A295E2286BABA00B38EFC /* XYDownLoadTool.m */,
 				5A23A607228A65A800BB6525 /* DownLoadCell.h */,
 				5A23A608228A65A800BB6525 /* DownLoadCell.m */,
+				5A7E7ACF229589C800A61F2B /* GCDGroupController.h */,
+				5A7E7AD0229589C800A61F2B /* GCDGroupController.m */,
+				5A7E7AD222958A2400A61F2B /* GCDSemaphoreController.h */,
+				5A7E7AD322958A2400A61F2B /* GCDSemaphoreController.m */,
 			);
 			path = XYBatchDownLoad;
 			sourceTree = "<group>";
@@ -319,8 +334,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A4A29302286BA3200B38EFC /* ViewController.m in Sources */,
+				5A7E7AD422958A2400A61F2B /* GCDSemaphoreController.m in Sources */,
 				5A4A293B2286BA3600B38EFC /* main.m in Sources */,
 				5A23A609228A65A800BB6525 /* DownLoadCell.m in Sources */,
+				5A7E7ACE2295874300A61F2B /* RootController.m in Sources */,
+				5A7E7AD1229589C800A61F2B /* GCDGroupController.m in Sources */,
 				5A4A295F2286BABA00B38EFC /* XYDownLoadTool.m in Sources */,
 				5A4A292D2286BA3200B38EFC /* AppDelegate.m in Sources */,
 			);

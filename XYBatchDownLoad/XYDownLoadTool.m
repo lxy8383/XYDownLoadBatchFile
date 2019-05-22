@@ -12,6 +12,7 @@
 @implementation XYDownLoadTool
 
 + (instancetype)sharedInstance{
+    
     static  id single = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -19,8 +20,8 @@
     });
     return single;
 }
-+ (instancetype)allocWithZone:(struct _NSZone *)zone
-{
++ (instancetype)allocWithZone:(struct _NSZone *)zone{
+    
     return [XYDownLoadTool sharedInstance];
 }
 
@@ -62,5 +63,17 @@
     }];
     
     [downTask resume];
+}
+
+- (void)requestWithUrl:(NSString *)urlStr andSuccessBlock:(void (^) (BOOL success))completionBlock
+{
+    AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
+    [manager GET:urlStr parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        NSLog(@"downloadProgress %@",downloadProgress);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        completionBlock(responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    
+    }];
 }
 @end
